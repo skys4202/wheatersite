@@ -1,0 +1,294 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+}
+
+body{
+   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(image/wallpaperbetter.com_1920x1080\ \(6\).jpg);
+   background-position: center;
+   background-size: cover;
+   min-height: 100vh;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+}
+
+.wrapper{
+  display: flex;
+   width: 1200px;
+   height: 800px;
+   min-width: 900px;
+   border-radius: 20px;
+   overflow: hidden;
+   user-select: none;
+}
+
+
+.leftbar{
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.815);
+  text-align: center;
+  padding: 20px;
+}
+
+.leftbar form{
+  width: 100%;
+  display: flex;
+}
+
+
+.leftbar input{
+  flex: 1;
+  width: 90%;
+  height: 35px;
+  outline: none;
+  border:none;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px 0 0 5px;
+  transition: .25s;
+}
+
+.leftbar button{
+  background: #4F98FF;
+  color: white;
+  width: 30px;
+  height: 35px;
+  outline: none;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.leftbar input:focus{
+  border: 1px solid #BAD8F2;
+}
+
+
+.imgage{
+ padding-top: 10px;
+}
+
+.leftbar img{
+  width: 100%;
+  height: 180px;
+  user-select: none;
+  padding: 10px;
+}
+
+
+.temple{
+  margin: 50px;
+}
+
+
+.templeicon{
+  gap: 30px;
+}
+
+.cloudicon{
+  margin: 10px;
+}
+
+
+.location{
+  position: relative;
+  top: 37%;
+}
+
+.rightbar{
+  width: 75%;
+  background: #F5F6F7;
+}
+
+.navbar{
+  align-items: center;
+  height: 8%;
+  justify-content: space-between;
+  display: flex;
+  padding:0 30px 0 30px;
+}
+
+
+.navbtn .today,
+.navbtn .week{
+  cursor: pointer;
+  background: transparent;
+  width: 70px;
+  height: 50px;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.navbtn .today,
+.navbtn .week:focus{
+  color: #699BEA;
+}
+
+.navbtn .week:hover{
+  color: #699BEA;
+}
+
+.navbtntwo .empty{
+  background: black;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  transition: .25s;
+}
+
+
+.navbtntwo .quarter{
+  background: #FEFFFE;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  border:none;
+  color: black;
+  transition: .25s;
+}
+
+.navbtntwo .quarter:hover{
+  color: black;
+  background: #FEFFFE;
+}
+.navbtntwo .quarter:focus{
+  background: black;
+  color: white;
+}
+
+.navbtntwo .empty:focus{
+  color: black;
+  background: #FEFFFE;
+}
+
+
+
+
+.weather{
+  padding: 30px;
+  height: 25%;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.weather img{
+  width: 60px;
+  height: 50px;
+}
+
+.sunday,
+.monday,
+.tuesday,
+.wednesday,
+.thursday,
+.friday,
+.saturday{
+  width: 11%;
+  height: 80%;
+  background: white;
+  border-radius: 20px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  line-height: 25px;
+  font-size: 11px;
+}
+
+.weather span{
+  font-weight: bold;
+}
+
+
+.highlight{
+  height: 10%;
+  padding: 0 0 0 45px;
+}
+
+
+.hightlightui{
+  padding: 0 35px;
+  display: inline-block;
+}
+
+.hightlightui div{
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+
+.uvindex,
+.windstatus,
+.sunrise,
+.humidity,
+.visibility,
+.airquality{
+  display: inline-block;
+  background: #FEFFFE;
+  width: 250px;
+  height: 130px;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.uvindex h3,
+.windstatus h3,
+.sunrise h3,
+.humidity h3,
+.visibility h3,
+.airquality h3{
+  color: #C6C5C6;
+}
+
+.uvindex h1,
+.windstatus h1,
+.sunrise h1,
+.humidity h1,
+.visibility h1,
+.airquality h1{
+   text-align: center;
+   padding: 15px;
+   font-weight: 400;
+   font-size: 25px;
+}
+
+.uvindex label,
+.windstatus label,
+.sunrise label,
+.humidity label,
+.visibility label,
+.airquality label{
+  font-size: 13px;
+}
+
+.airquality i{
+  color: #ECB538;
+}
+
+.copyright{
+  position: relative;
+  text-align: center;
+  top: 120px;
+  font-size: 13px;
+  color: #969698;
+  font-weight: bold;
+}
+
+.copyright i{
+  color: #B03422;
+}
